@@ -2,11 +2,11 @@ package com.dev.mainproject;
 
 public class ArrayStudy {
     public static void main(String[] args) {
-        ArrayStudy createArray = new ArrayStudy();
-        System.out.println(ArrayStudy.createArray());
+        ArrayStudy createArray; //
+        System.out.println(createArray());
 
-        ArrayStudy createStringArray = new ArrayStudy();
-        System.out.println(ArrayStudy.createStringArray());
+        ArrayStudy createStringArray;
+        System.out.println(ArrayStudy.createStringArray()); // Class name is not requred here
     }
 
     public static String createArray() {
