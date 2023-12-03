@@ -16,10 +16,9 @@ public class ArrayExercises {
         return arr;
     }
 
-    //Figure it out!!
     public static int[][] sort(int[][] arr) {
-        for (int[] arrs: arr) {
-            for (int arrsTwo: arrs) {
+        for (int i = 0; i < arr.length; i++) {
+            for (int j = 0; j < arr.length; j++) {
                  int k = arr[i][j];
                  if (arr[i][j] > arr[i][j+1]) {
                      arr[i][j] = arr[i][j+1];
