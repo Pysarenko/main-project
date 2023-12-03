@@ -15,4 +15,19 @@ public class ArrayExercises {
         }
         return arr;
     }
+
+    //Figure it out!!
+    public static int[][] sort(int[][] arr) {
+        for (int[] arrs: arr) {
+            for (int arrsTwo: arrs) {
+                 int k = arr[i][j];
+                 if (arr[i][j] > arr[i][j+1]) {
+                     arr[i][j] = arr[i][j+1];
+                     arr[i][j+1] = k;
+                 }
+            }
+        }
+        return arr;
+    }
+
 }
