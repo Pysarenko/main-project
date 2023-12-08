@@ -1,14 +1,14 @@
 package com.dev.mainproject;
 
-public interface MyArrayList {
+public interface MyArrayList <T> {
     //contract:
-    void add(String input);
+    void add(T input);
 
-    String get(int index);
+    T get(int index);
 
     void remove(int index);
 
-    void remove(String input);
+    void remove(T input);
     // end contract
 
 }

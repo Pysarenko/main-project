@@ -1,24 +1,22 @@
 package com.dev.mainproject;
 
-
-public class MyArrayListImpl implements MyArrayList {
-
+public class MyArrayListImpl<T> implements MyArrayList<T> {
 
     public MyArrayListImpl() {
     }
 
-    String[] array = new String[10];
+    T[] array = (T[]) new Object[10];
 
 
     @Override
-    public void add(String input) {
+    public void add(T input) {
         for (int i = 0; i < array.length; i++) {
             if (array[i] == null) {
                 array[i] = input;
                 break;
             }
             else if (i == array.length - 1) {
-                String[] newArray = new String[array.length*2];
+                T[] newArray = (T[]) new Object[array.length*2];
                 System.arraycopy(array, 0, newArray, 0, array.length);
                 array = newArray;
             }
@@ -26,17 +24,13 @@ public class MyArrayListImpl implements MyArrayList {
     }
 
     @Override
-    public String get(int index) {
-        return array[index];
-    }
+    public T get(int index) { return array[index]; }
 
     @Override
-    public void remove(int index) {
-        array[index] = null;
-    }
+    public void remove(int index) { array[index] = null; }
 
     @Override
-    public void remove(String input) {
+    public void remove(T input) {
         for (int i = 0; i < 10; i++) {
 
             if (array[i] != null && array[i].equals(input)) {

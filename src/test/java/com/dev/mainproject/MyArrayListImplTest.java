@@ -7,7 +7,7 @@ import static org.junit.jupiter.api.Assertions.*;
 class MyArrayListImplTest {
     @Test
     void arrayTest() {
-        MyArrayListImpl myArrayList = new MyArrayListImpl();
+        MyArrayListImpl<String> myArrayList = new MyArrayListImpl<>();
         myArrayList.add("String1");
         myArrayList.add("String2");
         myArrayList.add("String3");
@@ -23,7 +23,12 @@ class MyArrayListImplTest {
 
         myArrayList.remove(1);
 
-        myArrayList.remove("String3");
+        myArrayList.get(7);
+
+        //myArrayList.remove("String3");
+        MyArrayList<Integer> integerList = new MyArrayListImpl<>();
+        integerList.add(1);
+
     }
 
 }
