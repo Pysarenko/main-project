@@ -5,8 +5,12 @@ public class MainExt {
         A a = new B();
         a.m();
 
+
+
     }
 }
+
+
 
 class A {
      static {
